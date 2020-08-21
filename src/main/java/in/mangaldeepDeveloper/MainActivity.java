@@ -76,8 +76,8 @@ public class MainActivity extends AppCompatActivity {
                     affectedCountries.setText(jsonObject.getString("affectedCountries"));
                     pieChart.addPieSlice(new PieModel("Cases",Integer.parseInt(cases.getText().toString()), Color.parseColor("#fed70e")));
                     pieChart.addPieSlice(new PieModel("Recoverd",Integer.parseInt(recovered.getText().toString()), Color.parseColor("#fe6da8")));
-                    pieChart.addPieSlice(new PieModel("Deaths",Integer.parseInt(active.getText().toString()), Color.parseColor("#cda67f")));
-                    pieChart.addPieSlice(new PieModel("Active",Integer.parseInt(deaths.getText().toString()), Color.parseColor("#56b7f1")));
+                    pieChart.addPieSlice(new PieModel("Active",Integer.parseInt(active.getText().toString()), Color.parseColor("#cda67f")));
+                    pieChart.addPieSlice(new PieModel("Deaths",Integer.parseInt(deaths.getText().toString()), Color.parseColor("#56b7f1")));
                     pieChart.startAnimation();
 
                     ValueLineChart mCubicValueLineChart = (ValueLineChart) findViewById(R.id.cubiclinechart);
